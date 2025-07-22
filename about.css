@@ -1,0 +1,90 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+a { text-decoration: none; }
+
+/* Header */
+.site-header {
+  background: #000;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-links { list-style: none; display: flex; gap: 1rem; }
+.nav-links a { color: #fff; font-weight: bold; }
+
+/* Sections */
+main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+
+.intro, .mission {
+  background: #eee;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.intro h1, .mission h2 {
+  margin-bottom: 1rem;
+}
+
+.pillars {
+  margin-bottom: 2rem;
+}
+.pillar-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.pillar {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.history {
+  margin-bottom: 2rem;
+}
+
+.beliefs ul {
+  list-style: disc inside;
+  margin-bottom: 2rem;
+}
+
+.join {
+  text-align: center;
+  padding: 2rem;
+  background: #000;
+  color: #fff;
+}
+.join .cta-button {
+  background: #f9c400;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.site-footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.nav-links a.active {
+  border-bottom: 2px solid #f9c400;
+  color: #f9c400;
+}
